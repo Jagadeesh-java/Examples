@@ -4,6 +4,7 @@ import javax.imageio.spi.ServiceRegistry;
 
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+import org.hibernate.service.ServiceRegistryBuilder;
 
 /**
  * Hello world!
@@ -24,6 +25,7 @@ public class App
         
         
         Configuration con=new Configuration().configure().addAnnotatedClass(Alien.class);
+       
        
         
         org.hibernate.SessionFactory sf=con.buildSessionFactory();
